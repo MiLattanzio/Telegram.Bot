@@ -11,8 +11,7 @@ public partial class User
     public bool IsBot { get; set; }
 
     /// <summary>User's or bot's first name</summary>
-    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
-    public string FirstName { get; set; } = default!;
+    public string? FirstName { get; set; }
 
     /// <summary><em>Optional</em>. User's or bot's last name</summary>
     public string? LastName { get; set; }
